@@ -1,0 +1,12 @@
+*.sqlite*
+.env
+.env.backup
+npm-debug.log
+yarn-error.log
+Homestang.json
+Homestang.yaml
+/vender
+/storage/*.key
+/public/storage
+/public/hat
+/node_modules
