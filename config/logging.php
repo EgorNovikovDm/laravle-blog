@@ -38,11 +38,13 @@ return [
         'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],
+            'ignore_exceptions' => false,
         ],
 
         'single' => [
-            'driver' => 'errorlog',
-            'level' => 'debug',
+            'driver' => 'single',
+            'path' => storage_path('logs/laravel.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
         ],
 
         'daily' => [
